@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	<form>
+		User Name: <br>
+		<input type="text" name="username"> <br>
+		Password: <br>
+		<input type="password" name="password"> <br> <br>
+		<input type="button" onclick="check(this.form)" value="login">
+	</form>
+
+<script type="text/javascript">
+	
+	function check(form){
+		if(form.username.value == "amali" && form.password.value == "123"){
+			window.open("home.html")
+		}
+		else{
+			alert("Incorrect password")
+		}
+	}
+
+</script>
+</body>
+</html>
